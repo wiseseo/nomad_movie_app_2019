@@ -1,65 +1,39 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 
-const animalILike = [
-  {
-    id:1,
-    name:"cat",
-    image : "https://images.mypetlife.co.kr/content/uploads/2019/06/06202021/adorable-animal-baby-416088-1024x774.jpg",
-    
-  },
-  {
-    id:2,
-    name:"dog",
-    image:"https://images.mypetlife.co.kr/content/uploads/2019/08/20141553/shutterstock_119617003.jpg",
-    rating: 2.8
-  },
-  {
-    id:3,
-    name:"dolphin",
-    image:"https://i.ytimg.com/vi/mSoUh6es0j4/maxresdefault.jpg",
-    rating: 2.5
+class App extends React.Component {
+  constructor(props){
+    super(props);
+    console.log("hello");
   }
-]
-
-Animal.propTypes = {
-  name: PropTypes.string.isRequired,
-  picture: PropTypes.string.isRequired,
-  rating: PropTypes.number
-}
-
-function Animal({name , picture, rating}) {
-  //console.log(props);
-  //console.log(props.fav);
-  return <div>
-    <h2>I like {name}</h2>
-    <h4>{rating}/3</h4>
-    <img src={picture} alt={name}/>
-  </div>
-  
-}
-
-/*
-function renderAnimal(animal) {
-  console.log(animal);
-  return <Animal name={animal.name} picture={animal.image}/>
-}*/
-
-function App() {
-  return (
-    <div>
-      {animalILike.map(
-        animal => (
-         <Animal 
-         key={animal.id} 
-         name={animal.name}
-         picture={animal.image} 
-         rating={animal.rating}/>
-        )
-      )}
-    </div>
-  );
-  
+  state = {
+    count:0
+  };
+  add = () => {
+    console.log("add");
+    this.setState(current => ({count:current.count+1}));
+  };
+  minus = () => {
+    console.log("minus");
+    this.setState(current => ({count:current.count-1}));
+  };
+  componentWillUnmount() {
+    console.log("goodbye!");
+  }
+  componentDidUpdate(){
+    console.log("I updated!");
+  }
+  componentDidMount() {
+    console.log("I am rendered!");
+  }
+  render() {
+    console.log("render");
+    return <div>
+        <h1>The number is: {this.state.count}</h1>
+        <button onClick={this.add}>Add</button>
+        <button onClick={this.minus}>Minus</button>
+      </div>
+  }
 }
 
 export default App;
