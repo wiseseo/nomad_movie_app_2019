@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/nomad_movie_app_2019/static/css/main.de4c14a3.chunk.css",
+    "main.js": "/nomad_movie_app_2019/static/js/main.e69f9df6.chunk.js",
+    "main.js.map": "/nomad_movie_app_2019/static/js/main.e69f9df6.chunk.js.map",
+    "runtime~main.js": "/nomad_movie_app_2019/static/js/runtime~main.44e567f6.js",
+    "runtime~main.js.map": "/nomad_movie_app_2019/static/js/runtime~main.44e567f6.js.map",
+    "static/js/2.aa826c8a.chunk.js": "/nomad_movie_app_2019/static/js/2.aa826c8a.chunk.js",
+    "static/js/2.aa826c8a.chunk.js.map": "/nomad_movie_app_2019/static/js/2.aa826c8a.chunk.js.map",
+    "index.html": "/nomad_movie_app_2019/index.html",
+    "precache-manifest.22ab0788b2922cf2cec13d27b9ac2440.js": "/nomad_movie_app_2019/precache-manifest.22ab0788b2922cf2cec13d27b9ac2440.js",
+    "service-worker.js": "/nomad_movie_app_2019/service-worker.js",
+    "static/css/main.de4c14a3.chunk.css.map": "/nomad_movie_app_2019/static/css/main.de4c14a3.chunk.css.map"
+  }
+}
